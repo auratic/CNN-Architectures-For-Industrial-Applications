@@ -4,10 +4,10 @@ from PIL import Image
 import gradio as gr
 
 # Step 1: Load the Trained Model
-model = models.resnet18()
+model = models.resnet50()
 num_ftrs = model.fc.in_features
-model.fc = torch.nn.Linear(num_ftrs, 11)  # Assuming 11 weather classes
-model.load_state_dict(torch.load('weather_class_model_trained.pth',map_location=torch.device('cpu')))
+model.fc = torch.nn.Linear(num_ftrs, 11)  # 11 weather classes
+model.load_state_dict(torch.load('resnet50_20epochs.pth',map_location=torch.device('cpu')))
 model.eval()
 
 # Step 2: Define the Prediction Function
