@@ -1,3 +1,6 @@
+<h1>Description</h1>
+This repository showcases capstone project for workshop hosted by AI Nusantara and MMU, with the aim to provide insights on <b>CNN Architectures For Industrial Applications</b>
+
 <h1>Model training</h1>
 <b>model_training.ipynb</b> contains source code used for training model based on ResNet18 model
 
